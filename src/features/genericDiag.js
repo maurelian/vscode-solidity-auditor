@@ -109,9 +109,9 @@ class DiliDiagnosticCollection {
                                     pathToUri.set(targetFileUri.path, targetFileUri)
                                     pathToIssues.get(targetFileUri.path).push({
                                         code: '',
-                                        message: `${issue.linterName}/${issue.severity}/${issue.ruleType} - ${issue.message}`,
-                                        range: new vscode.Range(new vscode.Position(issue.atLineNr - 1, 0), new vscode.Position(issue.atLineNr - 1, 255)),
-                                        severity: toVscodeSeverity[issue.severity],
+                                        message: `TEST TEST TEST`,
+                                        range: new vscode.Range(new vscode.Position(1 - 1, 0), new vscode.Position(1 - 1, 255)),
+                                        severity: vscode.DiagnosticSeverity.Error,
                                         source: "",
                                         relatedInformation: []
                                         
